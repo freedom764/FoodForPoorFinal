@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="foodforpoor1.help.poor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="foodforpoor1.help.poor.Team"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="foodforpoor1.help.poor.Aims"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="foodforpoor1.help.poor.Instruction"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="foodforpoor1.help.poor.Main4Activity"
+            android:label="Изменение товара" />
+        <activity
+            android:name="foodforpoor1.help.poor.Main3Activity"
+            android:label="Товар" />
+        <activity
+            android:name="foodforpoor1.help.poor.Main2Activity"
+            android:label="Добавление товара">
+            <intent-filter>
+                <action android:name=".Main2Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="foodforpoor1.help.poor.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
